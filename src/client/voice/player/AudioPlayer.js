@@ -5,10 +5,6 @@ const Collection = require('../../../util/Collection');
 const OpusEncoders = require('../opus/OpusEngineList');
 
 
- 
-
-
-
 const ffmpegArguments = [
   '-analyzeduration', '0',
   '-loglevel', '0',
@@ -17,7 +13,6 @@ const ffmpegArguments = [
   '-ac', '2',
   '-reconnect', '1',
   '-reconnect_streamed', '1',
-
   '-reconnect_delay_max', '10',
 ];
 

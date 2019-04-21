@@ -4,12 +4,21 @@ const StreamDispatcher = require('../dispatcher/StreamDispatcher');
 const Collection = require('../../../util/Collection');
 const OpusEncoders = require('../opus/OpusEngineList');
 
+
+ 
+
+
+
 const ffmpegArguments = [
   '-analyzeduration', '0',
   '-loglevel', '0',
   '-f', 's16le',
   '-ar', '48000',
   '-ac', '2',
+  '-reconnect', '1',
+  '-reconnect_streamed', '1',
+  '-reconnect_at_eof', '1',
+  '-reconnect_delay_max', '10',
 ];
 
 /**

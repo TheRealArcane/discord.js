@@ -17,7 +17,7 @@ const ffmpegArguments = [
   ];
 
 /**
- * An Audio Player for a Voice Connection.
+ * An Audio Play;er for a Voice Connection.
  * @private
  * @extends {EventEmitter}
  */
